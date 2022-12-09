@@ -1,0 +1,9 @@
+.home-page {
+  &__main {
+    height: 1000px;
+    padding: 0 16px;
+    &__slide {
+      background-color: lightblue;
+    }
+  }
+}

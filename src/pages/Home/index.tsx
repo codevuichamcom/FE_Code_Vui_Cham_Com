@@ -1,13 +1,11 @@
+import { NavBar } from '../../components'
+import './Home.scss'
 const HomePage = (): JSX.Element => {
   return (
     <div className="home-page">
-      <nav className="navbar">
-        <button>===</button>
-        <button>search</button>
-        <button>noti</button>
-      </nav>
-      <main>
-        <section>Slide</section>
+      <NavBar />
+      <main className="home-page__main">
+        <section className="home-page__main__slide">Slide</section>
         <section>Pro course</section>
         <section>Free course</section>
         <section>Highlight article</section>
