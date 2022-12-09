@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
-const HomePage = lazy(() => import('./pages/HomePage'))
+const HomePage = lazy(() => import('./pages/Home'))
 
 import './global.scss'
 
