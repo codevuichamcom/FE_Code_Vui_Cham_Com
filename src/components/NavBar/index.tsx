@@ -1,6 +1,6 @@
 import { faBars, faBell, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { CustomMouseEvent } from '../../types'
+import { CustomMouseEvent } from '~/types'
 import './NavBar.scss'
 
 interface NavBarProps {
