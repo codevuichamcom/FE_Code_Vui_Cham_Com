@@ -1,0 +1,76 @@
+.horizontal-scroll-list {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__heading {
+    color: #242424;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-right: auto;
+    margin: 16px auto 16px 0;
+    &__icon {
+      background-color: #1473e6;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 3px 6px;
+      position: relative;
+      right: -8px;
+      text-transform: uppercase;
+      top: -6px;
+    }
+  }
+  &__contents {
+    padding-top: 3px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 16px;
+    &__items {
+      margin-bottom: 0;
+      width: 60vw;
+      flex-shrink: 0;
+      &__image {
+        a {
+          background-color: rgba(0, 0, 0, 0.1);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 16px;
+          display: block;
+          object-fit: cover;
+          overflow: hidden;
+          padding-top: 56.25%;
+          position: relative;
+          width: 100%;
+        }
+      }
+      &__title {
+        word-wrap: break-word;
+        color: #292929;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        overflow: hidden;
+        font-weight: 600;
+        margin: 10px 0px;
+      }
+      &__price {
+        &--old {
+          font-size: 1.4rem;
+          margin-right: 8px;
+          text-decoration: line-through;
+        }
+        &--current {
+          color: #f05123;
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+    }
+    &__items + &__items {
+      margin-left: 16px;
+    }
+  }
+}
