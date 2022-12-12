@@ -1,0 +1,33 @@
+.menu-mobile {
+  &__overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    &--show {
+      opacity: 1;
+      .menu-mobile__contents {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+  }
+  &__contents {
+    transition: transform 0.5s ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    pointer-events: auto;
+  }
+}
