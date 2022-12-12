@@ -1,18 +1,25 @@
+import { faBars, faBell, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { CustomMouseEvent } from '../../types'
 import './NavBar.scss'
-import hamberger from '/src/assets/hamberger.svg'
-import search from '/src/assets/search.svg'
-import notification from '/src/assets/notification.svg'
 
-const NavBar = () => {
+interface NavBarProps {
+  OnHambergerClick: (e: CustomMouseEvent) => void
+}
+const NavBar = ({ OnHambergerClick }: NavBarProps) => {
   return (
     <nav className="nav-bar">
-      <div className="nav-bar__hamberger">
-        <img src={hamberger} alt="hamberger" width={17.5} />
+      <div className="nav-bar__hamberger" onClick={OnHambergerClick}>
+        <FontAwesomeIcon icon={faBars} />
       </div>
 
       <div className="nav-bar__actions">
-        <img src={search} alt="search" width={18} />
-        <img src={notification} alt="notification" width={18} />
+        <div className="nav-bar__actions__search">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </div>
+        <div className="nav-bar__actions__bell">
+          <FontAwesomeIcon icon={faBell} />
+        </div>
       </div>
     </nav>
   )
