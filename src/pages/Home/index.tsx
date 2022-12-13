@@ -4,6 +4,7 @@ import HorizontalScrollList from '~/components/HorizontalScrollList'
 import MenuMobile from '~/components/MenuMobile'
 import Slide from '~/components/SlideShow'
 import { CustomMouseEvent } from '~/types'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import './Home.scss'
 
 const HomePage = (): JSX.Element => {
@@ -11,14 +12,17 @@ const HomePage = (): JSX.Element => {
   const onMenu = (e: CustomMouseEvent) => {
     e.stopPropagation()
     setIsShowMenu(true)
+    disableBodyScroll(document.body)
   }
 
   const offMenu = () => {
     setIsShowMenu(false)
+    enableBodyScroll(document.body)
   }
 
   useEffect(() => {
     document.body.addEventListener('click', offMenu)
+
     return () => {
       document.body.removeEventListener('click', offMenu)
     }

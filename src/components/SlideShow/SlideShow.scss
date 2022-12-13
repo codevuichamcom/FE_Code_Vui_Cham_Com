@@ -45,6 +45,8 @@
   }
   &__right {
     flex-grow: 3;
-    height: 270px;
+    img {
+      height: 270px;
+    }
   }
 }

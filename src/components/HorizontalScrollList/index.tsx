@@ -2,7 +2,7 @@ import './HorizontalScrollList.scss'
 
 const HorizontalScrollList = () => {
   return (
-    <section className="horizontal-scroll-list">
+    <div className="horizontal-scroll-list">
       <h2 className="horizontal-scroll-list__heading">
         Khóa học Pro<span className="horizontal-scroll-list__heading__icon">Mới</span>
       </h2>
@@ -53,7 +53,7 @@ const HorizontalScrollList = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -2,10 +2,10 @@ import './SlideShow.scss'
 
 const SlideShow = () => {
   return (
-    <section className="slide-show">
+    <div className="slide-show">
       <div className="slide-show__left">
         <h2 className="slide-show__left__heading">
-          Khóa học HTML CSS Pro{' '}
+          Khóa học HTML CSS Pro
           <img
             src="https://fullstack.edu.vn/static/media/crown_icon.3e4800f7485935ab6ea312a7080a85fe.svg"
             alt=""
@@ -26,7 +26,7 @@ const SlideShow = () => {
           title="Khóa học HTML CSS Pro"
         />
       </div>
-    </section>
+    </div>
   )
 }
 
