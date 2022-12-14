@@ -1,0 +1,12 @@
+.layout {
+  &__main {
+    padding: 0 16px;
+  }
+  &__footer {
+    background-color: #181821;
+    color: #a9b3bb;
+    overflow: hidden;
+    font-size: 3rem;
+    padding: 48px 16px 40px;
+  }
+}

@@ -1,16 +1,6 @@
 .home-page {
-  &__main {
-    padding: 0 16px;
-    &__wrapper {
-      margin-top: 60px;
-      padding: 0 0 36px;
-    }
-  }
-  &__footer {
-    background-color: #181821;
-    color: #a9b3bb;
-    overflow: hidden;
-    font-size: 3rem;
-    padding: 48px 16px 40px;
+  &__wrapper {
+    margin-top: 60px;
+    padding: 0 0 36px;
   }
 }

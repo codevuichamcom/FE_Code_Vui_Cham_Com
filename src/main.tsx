@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
-const HomePage = lazy(() => import('./pages/Home'))
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+const HomePage = lazy(() => import('~/pages/Home'))
+const ProfilePage = lazy(() => import('~/pages/Profile'))
 
 import './global.scss'
 
@@ -11,13 +12,8 @@ const router = createBrowserRouter([
     element: <HomePage />
   },
   {
-    path: '/about',
-    element: (
-      <div>
-        <h1>About page</h1>
-        <Link to={'/'}>Go to home page</Link>
-      </div>
-    )
+    path: '/profile',
+    element: <ProfilePage />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

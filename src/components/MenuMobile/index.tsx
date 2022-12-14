@@ -1,19 +1,18 @@
-import classnames from 'classnames'
-import { CustomMouseEvent } from '~/types'
-import VerticalList from '../VerticalList'
 import {
-  faUser,
+  faBookmark,
   faBookOpen,
+  faCircleInfo,
   faHouse,
-  faRoad,
   faLightbulb,
   faNewspaper,
   faRightFromBracket,
-  faBookmark,
-  faCircleInfo,
+  faRoad,
+  faUser,
   faUsers
 } from '@fortawesome/free-solid-svg-icons'
-
+import classnames from 'classnames'
+import { CustomMouseEvent } from '~/types'
+import { VerticalList } from '~/components'
 import './MenuMobile.scss'
 
 export interface MenuMobile {
