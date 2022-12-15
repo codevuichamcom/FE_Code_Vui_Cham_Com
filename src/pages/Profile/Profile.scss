@@ -1,0 +1,149 @@
+.profile {
+  min-height: calc(100vh - 184px);
+
+  &__banner {
+    background: top/cover no-repeat;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: -66px;
+    padding-top: 28%;
+    position: relative;
+    width: 100%;
+    background-image: url('https://fullstack.edu.vn/static/media/cover-profile.3fb9fed576da4b28386a.png');
+    &__user {
+      position: absolute;
+      left: 50%;
+      bottom: -122px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__avatar {
+        img {
+          border-radius: 50%;
+          height: 128px;
+          object-fit: cover;
+        }
+      }
+      &__name {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 6px auto 0 0;
+        text-align: center;
+      }
+    }
+    &__edit-bg {
+      position: absolute;
+      bottom: 15px;
+      right: 8px;
+
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+
+      border-radius: 6px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      height: auto;
+      max-height: 40px;
+      padding: 5px 8px;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        font-size: 2rem;
+        margin: 0px;
+        color: #4f4d4d;
+      }
+    }
+  }
+
+  &__container {
+    margin-top: 150px;
+    padding: 0 24px;
+    .box-wrapper {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 10%);
+      margin-bottom: 20px;
+      padding: 18px 14px;
+      word-break: break-word;
+    }
+    &__introduce {
+      &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0 0 8px;
+      }
+      &__participation {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin-top: 15px;
+        svg {
+          color: #808990;
+          margin-right: 8px;
+          margin-top: 2px;
+          text-align: center;
+          width: 20px;
+        }
+        .highlight {
+          font-weight: bold;
+        }
+      }
+    }
+    &__activities {
+      &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0 0 8px;
+      }
+      &__contents {
+        font-size: 1.3rem;
+      }
+    }
+    &__course-participate {
+      &__items {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #d0d7de;
+        &:last-child {
+          border-bottom: none;
+        }
+        &__image {
+          display: block;
+          margin-bottom: 12px;
+          img {
+            border-radius: 16px;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+        &__course-name {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        &__course-description {
+          word-wrap: break-word;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5;
+          display: -webkit-box;
+          font-size: 1.4rem;
+          line-height: 2.2rem;
+          margin-top: 4px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+.nav-bar {
+  background-color: transparent;
+  border-bottom: none;
+}

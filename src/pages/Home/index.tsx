@@ -5,17 +5,17 @@ import './Home.scss'
 
 const HomePage = (): JSX.Element => {
   return (
-    <>
-      <Layout>
+    <Layout>
+      <main className="home-page">
         <SlideShow />
-        <div className="home-page__wrapper">
+        <div className="home-page__list">
           <HorizontalScrollList />
           <HorizontalScrollList />
           <HorizontalScrollList />
           <HorizontalScrollList />
         </div>
-      </Layout>
-    </>
+      </main>
+    </Layout>
   )
 }
 

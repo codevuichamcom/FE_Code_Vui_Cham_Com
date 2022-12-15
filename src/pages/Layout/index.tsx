@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { MenuMobile, NavBar } from '~/components'
 import { CustomMouseEvent } from '~/types'
 
+import './Layout.scss'
 export interface LayoutProps {
   children: React.ReactNode
 }
@@ -31,8 +32,8 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="layout">
         <NavBar OnHambergerClick={onMenu} />
-        <main className="layout__main">{children}</main>
-        <div className="layout__footer">Footer</div>
+        <>{children}</>
+        <footer className="layout__footer">Footer</footer>
       </div>
       <MenuMobile isShow={isShowMenu} />
     </>

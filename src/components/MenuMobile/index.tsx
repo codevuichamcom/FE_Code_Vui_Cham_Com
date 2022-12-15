@@ -36,7 +36,7 @@ const MenuMobile = ({ isShow }: MenuMobile) => {
           <div className="menu-mobile__contents__wrapper__profile">
             <VerticalList
               data={[
-                { id: 1, icon: faUser, title: 'Trang cá nhân', link: '#' },
+                { id: 1, icon: faUser, title: 'Trang cá nhân', link: '/profile' },
                 { id: 2, icon: faBookOpen, title: 'Khóa học của tôi', link: '#' }
               ]}
             />
@@ -44,7 +44,7 @@ const MenuMobile = ({ isShow }: MenuMobile) => {
           <div className="menu-mobile__contents__wrapper__menu">
             <VerticalList
               data={[
-                { id: 1, icon: faHouse, title: 'Trang chủ', link: '#' },
+                { id: 1, icon: faHouse, title: 'Trang chủ', link: '/' },
                 { id: 2, icon: faRoad, title: 'Lộ trình', link: '#' },
                 { id: 3, icon: faLightbulb, title: 'Khóa học', link: '#' },
                 { id: 4, icon: faNewspaper, title: 'Blog', link: '#' }
