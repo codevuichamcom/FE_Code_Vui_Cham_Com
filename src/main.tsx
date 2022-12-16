@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const HomePage = lazy(() => import('~/pages/Home'))
 const ProfilePage = lazy(() => import('~/pages/Profile'))
-
+const LearningPage = lazy(() => import('~/pages/Learning'))
 import './global.scss'
+import 'react-circular-progressbar/dist/styles.css'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <ProfilePage />
+  },
+  {
+    path: '/learning',
+    element: <LearningPage />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
