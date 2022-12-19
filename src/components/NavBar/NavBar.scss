@@ -1,16 +1,18 @@
 .nav-bar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 66px;
   padding: 0 16px;
-  background-color: #fff;
   border-bottom: 1px solid #e8ebed;
-  z-index: 1;
+
+  background-color: #fff;
 
   &__hamberger {
     color: #707070;
@@ -21,6 +23,7 @@
     align-items: center;
     color: #707070;
     font-size: 1.8rem;
+
     &:hover {
       cursor: pointer;
     }
@@ -31,18 +34,19 @@
     &__noti-popup {
       position: absolute;
       inset: 0 0 auto auto;
-      margin: 0px;
-      transform: translate(-16px, 60px);
-      max-width: 84vw;
-      width: 520px;
 
-      background: #fff;
+      width: 520px;
+      max-width: 84vw;
+      margin: 0;
+      padding-left: 0;
       border-radius: 10px;
       box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+
       color: #1d2129;
-      margin: 0;
+      background: #fff;
+      transform: translate(-16px, 60px);
       overflow: hidden;
-      padding-left: 0;
+
       &__header {
         display: flex;
         justify-content: space-between;
@@ -52,14 +56,17 @@
           &__popup {
             position: absolute;
             inset: 0px 0px auto auto;
-            transform: translate(-10px, 60px);
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+
             min-width: 310px;
             padding: 8px;
-            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+
             font-size: 1.4rem;
+            background-color: #fff;
+            transform: translate(-10px, 60px);
+            cursor: pointer;
+
             &__wrapper {
               padding: 10px 8px;
               &:hover {
@@ -70,12 +77,13 @@
               }
             }
             &::after {
-              border: 10px solid transparent;
-              border-bottom: 10px solid #fff;
               content: '';
               position: absolute;
               right: 15px;
               top: -18px;
+
+              border: 10px solid transparent;
+              border-bottom: 10px solid #fff;
             }
           }
         }
@@ -83,29 +91,32 @@
       &__wrapper {
         display: flex;
         align-items: center;
-        border-radius: 10px;
         margin: 0 8px;
         padding: 8px 36px 8px 12px;
+        border-radius: 10px;
+
         &__image {
           img {
-            border-radius: 50%;
-            height: 42px;
-            object-fit: cover;
             width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
           }
         }
         &__contents {
-          color: #333;
           flex-grow: 1;
+          padding: 0 10px 0 16px;
+
+          color: #333;
           font-size: 1.4rem;
           line-height: 18px;
-          padding: 0 10px 0 16px;
           word-break: break-word;
+
           &__time {
+            margin-top: 6px;
             color: #f05123;
             font-size: 1.3rem;
             font-weight: 500;
-            margin-top: 6px;
           }
         }
       }

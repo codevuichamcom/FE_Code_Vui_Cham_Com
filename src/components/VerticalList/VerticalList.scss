@@ -1,25 +1,29 @@
 .vertical-list {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 20px;
   margin: 0 0 12px;
   padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.079);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+
   &__wrapper {
     a {
-      border-bottom-left-radius: 5px;
-      border-top-left-radius: 5px;
-      color: #333;
-      cursor: pointer;
       display: block;
+      padding: 16px 0 16px 16px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+
+      color: #333;
       font-size: 1.6rem;
       font-weight: 500;
-      padding: 16px 0 16px 16px;
       text-decoration: none;
+      cursor: pointer;
+
       svg {
-        color: #757575;
-        margin-right: 16px;
         width: 20px;
+        margin-right: 16px;
+        color: #757575;
       }
       &:hover {
         background-color: #f0f0f0;

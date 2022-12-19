@@ -8,6 +8,7 @@
     background-color: #000;
     padding-top: 56.25%;
     position: relative;
+
     &__wrapper {
       position: absolute;
       inset: 0;
@@ -19,23 +20,26 @@
   &__contents {
     min-height: 400px;
     padding: 0 16px;
+
     &__lesson-name {
-      font-size: 2.8rem;
       margin: 24px 0 8px;
+      font-size: 2.8rem;
       font-weight: 600;
     }
     &__updated {
-      font-size: 1.3rem;
       margin-bottom: 36px;
+      font-size: 1.3rem;
     }
     &__take-note {
-      background-color: #ebebeb;
-      border-radius: 6px;
-      font-size: 1.4rem;
-      padding: 12px 16px;
-      cursor: pointer;
       display: inline-block;
+      padding: 12px 16px;
+      border-radius: 6px;
       border: none;
+
+      background-color: #ebebeb;
+      font-size: 1.4rem;
+      cursor: pointer;
+
       span {
         margin-left: 8px;
       }
@@ -52,13 +56,15 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 60px;
     background-color: #f0f0f0;
     box-shadow: 0 -2px 3px rgb(0 0 0 / 10%);
+
     &__toggle-btn {
       all: unset;
       display: flex;
@@ -66,35 +72,40 @@
       align-items: center;
       width: 38px;
       height: 38px;
+      margin: 0 8px;
+      border-radius: 50%;
+
       background-color: #fff;
       font-size: 1.6rem;
       cursor: pointer;
-      border-radius: 50%;
-      margin: 0 8px;
     }
     &__right {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       &__btn {
         all: unset;
+        opacity: 0.5;
+        margin-right: 16px;
+        padding: 10px;
+        border-radius: 6px;
+
+        color: #404040;
         font-size: 1.4rem;
         font-weight: 600;
-        padding: 10px;
-        margin-right: 16px;
-        color: #404040;
-        border-radius: 6px;
-        opacity: 0.5;
+
         span {
+          padding: 8px;
           color: #404040;
           font-size: 1.4rem;
           font-weight: 600;
-          padding: 8px;
         }
         &--next {
           opacity: 1;
-          color: #f05123;
           border: 2px solid #f05123;
+          color: #f05123;
+
           span {
             color: #f05123;
           }

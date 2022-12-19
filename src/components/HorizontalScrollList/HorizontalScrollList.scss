@@ -4,61 +4,70 @@
     color: inherit;
   }
   &__heading {
+    margin: 16px auto 16px 0;
     color: #242424;
     font-size: 2rem;
     font-weight: 900;
-    margin: 16px auto 16px 0;
+
     &__icon {
-      background-color: #1473e6;
+      position: relative;
+      top: -6px;
+      right: -8px;
+      padding: 3px 6px;
       border-radius: 4px;
+
       color: #fff;
+      background-color: #1473e6;
       font-size: 1.2rem;
       font-weight: 500;
-      padding: 3px 6px;
-      position: relative;
-      right: -8px;
       text-transform: uppercase;
-      top: -6px;
     }
   }
   &__contents {
-    padding-top: 3px;
     display: flex;
+    padding-top: 3px;
+    padding-bottom: 16px;
+
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: 16px;
+
     &__items {
-      margin-bottom: 0;
       width: 60vw;
+      margin-bottom: 0;
       flex-shrink: 0;
+
       &__image {
         a {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding-top: 56.25%;
+          border-radius: 16px;
+
           background-color: rgba(0, 0, 0, 0.1);
           background-position: 50%;
           background-repeat: no-repeat;
           background-size: cover;
-          border-radius: 16px;
-          display: block;
           object-fit: cover;
           overflow: hidden;
-          padding-top: 56.25%;
-          position: relative;
-          width: 100%;
         }
       }
+
       &__title {
+        margin: 10px 0px;
         word-wrap: break-word;
+
         color: #292929;
         font-size: 1.6rem;
+        font-weight: 600;
         line-height: 1.4;
         overflow: hidden;
-        font-weight: 600;
-        margin: 10px 0px;
       }
+
       &__price {
         &--old {
-          font-size: 1.4rem;
           margin-right: 8px;
+          font-size: 1.4rem;
           text-decoration: line-through;
         }
         &--current {
