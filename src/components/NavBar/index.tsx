@@ -6,7 +6,7 @@ import {
   faMagnifyingGlass
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { CustomMouseEvent } from '~/types'
 import './NavBar.scss'
 
@@ -17,6 +17,12 @@ const NavBar = ({ OnHambergerClick }: NavBarProps): JSX.Element => {
   const [isShowNotiPopup, setIsShowNotiPopup] = useState(false)
   const [isShowNotiOptionsPopup, setIsShowNotiOptionsPopup] = useState(false)
 
+  useEffect(() => {
+    document.body.addEventListener('click', hideNotiPopup)
+    return () => {
+      document.body.removeEventListener('click', hideNotiPopup)
+    }
+  }, [])
   const onClickNotiPopup = (e: CustomMouseEvent): void => {
     e.stopPropagation()
     setIsShowNotiOptionsPopup(false)
@@ -33,13 +39,6 @@ const NavBar = ({ OnHambergerClick }: NavBarProps): JSX.Element => {
     setIsShowNotiPopup(false)
     setIsShowNotiOptionsPopup(false)
   }
-  useEffect(() => {
-    document.body.addEventListener('click', hideNotiPopup)
-
-    return () => {
-      document.body.removeEventListener('click', hideNotiPopup)
-    }
-  }, [])
 
   return (
     <nav className="nav-bar">

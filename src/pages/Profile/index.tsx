@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from '../Layout'
 import './Profile.scss'
 
+export const BANNER_HEIGHT = 200
 const ProfilePage = () => {
   return (
     <Layout>

@@ -7,3 +7,10 @@
     overflow: hidden;
   }
 }
+
+.transparent-nav {
+  .nav-bar {
+    border-bottom: none;
+    background-color: transparent;
+  }
+}
