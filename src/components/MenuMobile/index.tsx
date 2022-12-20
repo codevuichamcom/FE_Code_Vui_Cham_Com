@@ -14,6 +14,7 @@ import classnames from 'classnames'
 import { CustomMouseEvent } from '~/types'
 import { VerticalList } from '~/components'
 import './MenuMobile.scss'
+import { PAGE } from '~/constants'
 
 export interface MenuMobile {
   isShow: boolean
@@ -36,37 +37,37 @@ const MenuMobile = ({ isShow }: MenuMobile) => {
           <div className="menu-mobile__contents__wrapper__profile">
             <VerticalList
               data={[
-                { id: 1, icon: faUser, title: 'Trang cá nhân', link: '/profile' },
-                { id: 2, icon: faBookOpen, title: 'Khóa học của tôi', link: '/my-course' }
+                { id: 1, icon: faUser, title: 'Trang cá nhân', link: PAGE.PROFILE },
+                { id: 2, icon: faBookOpen, title: 'Khóa học của tôi', link: PAGE.MY_COURSE }
               ]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__menu">
             <VerticalList
               data={[
-                { id: 1, icon: faHouse, title: 'Trang chủ', link: '/' },
-                { id: 2, icon: faRoad, title: 'Lộ trình', link: '/lerning-path' },
-                { id: 3, icon: faLightbulb, title: 'Khóa học', link: '/course' },
-                { id: 4, icon: faNewspaper, title: 'Blog', link: '/blog' }
+                { id: 1, icon: faHouse, title: 'Trang chủ', link: PAGE.HOME },
+                { id: 2, icon: faRoad, title: 'Lộ trình', link: PAGE.LEARNING_PATH },
+                { id: 3, icon: faLightbulb, title: 'Khóa học', link: PAGE.COURSES },
+                { id: 4, icon: faNewspaper, title: 'Blog', link: PAGE.BLOG }
               ]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__saved">
             <VerticalList
-              data={[{ id: 1, icon: faBookmark, title: 'Bài viết đã lưu', link: '/bookmark' }]}
+              data={[{ id: 1, icon: faBookmark, title: 'Bài viết đã lưu', link: PAGE.BOOKMARK }]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__reference">
             <VerticalList
               data={[
-                { id: 1, icon: faCircleInfo, title: 'Giới thiệu', link: '/about' },
-                { id: 2, icon: faUsers, title: 'Cơ hội việc làm', link: '/carrer' }
+                { id: 1, icon: faCircleInfo, title: 'Giới thiệu', link: PAGE.ABOUT },
+                { id: 2, icon: faUsers, title: 'Cơ hội việc làm', link: PAGE.CARRER }
               ]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__logout">
             <VerticalList
-              data={[{ id: 1, icon: faRightFromBracket, title: 'Đăng xuất', link: '/logout' }]}
+              data={[{ id: 1, icon: faRightFromBracket, title: 'Đăng xuất', link: PAGE.LOGOUT }]}
             />
           </div>
         </div>
