@@ -41,6 +41,11 @@
       @include tablet {
         width: 35vw;
       }
+      @include desktop {
+        // width equally divided among the elements (min:200px)
+        flex-basis: 200px;
+        flex-grow: 1;
+      }
 
       &__image {
         a {

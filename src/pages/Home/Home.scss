@@ -6,12 +6,13 @@
   @include desktop {
     padding-left: 112px;
   }
-  &__wrapper {
+  &__list {
     margin-top: 60px;
     padding: 0 0 36px;
 
     @include desktop {
-      padding: 0 40px 0 20px;
+      margin-top: 70px;
+      padding: 0 40px 0 44px;
     }
   }
 }

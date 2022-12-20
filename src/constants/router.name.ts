@@ -2,6 +2,7 @@ const PAGE = {
   HOME: '/',
   PROFILE: '/profile',
   MY_COURSE: '/my-course',
+  LEARNING: '/learning',
   LEARNING_PATH: '/learning-path',
   COURSES: '/courses',
   BLOG: '/blog',

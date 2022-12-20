@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+import { PAGE } from '~/constants'
 import './HorizontalScrollList.scss'
 
 const HorizontalScrollList = () => {
@@ -9,12 +11,14 @@ const HorizontalScrollList = () => {
       <div className="horizontal-scroll-list__contents">
         <div className="horizontal-scroll-list__contents__items">
           <div className="horizontal-scroll-list__contents__items__image">
-            <a
-              href="#"
+            <NavLink
+              to={PAGE.LEARNING}
               style={{
                 backgroundImage:
                   'url(https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png)'
-              }}></a>
+              }}>
+              <button>Xem thêm</button>
+            </NavLink>
           </div>
           <div className="horizontal-scroll-list__contents__items__title">
             <a href="#">HTML CSS Pro</a>
