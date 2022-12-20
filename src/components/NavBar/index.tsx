@@ -6,8 +6,9 @@ import {
   faMagnifyingGlass
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CustomMouseEvent } from '~/types'
+import SearchArea from '../SearchArea'
 import './NavBar.scss'
 
 interface NavBarProps {
@@ -44,6 +45,9 @@ const NavBar = ({ OnHambergerClick }: NavBarProps): JSX.Element => {
     <nav className="nav-bar">
       <div className="nav-bar__hamberger" onClick={OnHambergerClick}>
         <FontAwesomeIcon icon={faBars} />
+      </div>
+      <div className="nav-bar__search-area">
+        <SearchArea placeholder="Tìm kiếm khóa học, bài viết, video, ..." />
       </div>
 
       <div className="nav-bar__actions">
