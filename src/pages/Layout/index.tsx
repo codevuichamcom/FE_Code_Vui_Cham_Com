@@ -1,6 +1,6 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import React, { useEffect, useState } from 'react'
-import { MenuMobile, NavBar } from '~/components'
+import { MenuMobile, NavBar, SideBar } from '~/components'
 import { CustomMouseEvent } from '~/types'
 
 import './Layout.scss'
@@ -31,7 +31,8 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="layout">
         <NavBar OnHambergerClick={onMenu} />
-        <>{children}</>
+        <SideBar />
+        {children}
         <footer className="layout__footer">Footer</footer>
       </div>
       <MenuMobile isShow={isShowMenu} />

@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CustomMouseEvent } from '~/types'
 import SearchArea from '../SearchArea'
 import './NavBar.scss'
@@ -46,6 +47,15 @@ const NavBar = ({ OnHambergerClick }: NavBarProps): JSX.Element => {
       <div className="nav-bar__hamberger" onClick={OnHambergerClick}>
         <FontAwesomeIcon icon={faBars} />
       </div>
+      <div className="nav-bar__logo">
+        <Link to="/">
+          <img
+            src="https://webbynat.files.wordpress.com/2017/05/logo-funnylinecode-01.jpg?w=521"
+            alt="logo"
+          />
+        </Link>
+        <h4>Code là phải vui</h4>
+      </div>
       <div className="nav-bar__search-area">
         <SearchArea placeholder="Tìm kiếm khóa học, bài viết, video, ..." />
       </div>
@@ -54,8 +64,17 @@ const NavBar = ({ OnHambergerClick }: NavBarProps): JSX.Element => {
         <div className="nav-bar__actions__search">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </div>
+        <div className="nav-bar__actions__my-course">
+          <h4>Khóa học của tôi</h4>
+        </div>
         <div className="nav-bar__actions__bell" onClick={showNotiPopup}>
           <FontAwesomeIcon icon={faBell} />
+        </div>
+        <div className="nav-bar__actions__avatar">
+          <img
+            src="https://fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg"
+            alt="avatar"
+          />
         </div>
         {isShowNotiPopup && (
           <div className="nav-bar__actions__noti-popup" onClick={onClickNotiPopup}>

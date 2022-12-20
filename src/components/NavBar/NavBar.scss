@@ -16,9 +16,34 @@
 
   background-color: #fff;
 
+  @include desktop {
+    padding: 0 28px;
+  }
   &__hamberger {
     color: #707070;
     font-size: 2rem;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__logo {
+    display: none;
+    align-items: center;
+    @include desktop {
+      display: flex;
+    }
+    img {
+      border-radius: 8px;
+      height: 38px;
+      object-fit: contain;
+      width: 38px;
+    }
+    h4 {
+      color: #000;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: 16px;
+    }
   }
   &__search-area {
     display: none;
@@ -49,8 +74,37 @@
         display: none;
       }
     }
+    &__my-course {
+      display: none;
+      @include desktop {
+        display: block;
+      }
+      h4 {
+        margin-right: 16px;
+        padding: 8px;
+        color: #333;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
     &__bell {
       padding: 8px 12px;
+    }
+    &__avatar {
+      display: none;
+      margin-left: 12px;
+
+      @include desktop {
+        display: block;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
     }
     &__noti-popup {
       position: absolute;

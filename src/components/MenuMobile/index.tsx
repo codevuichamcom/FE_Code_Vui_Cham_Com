@@ -37,7 +37,7 @@ const MenuMobile = ({ isShow }: MenuMobile) => {
             <VerticalList
               data={[
                 { id: 1, icon: faUser, title: 'Trang cá nhân', link: '/profile' },
-                { id: 2, icon: faBookOpen, title: 'Khóa học của tôi', link: '#' }
+                { id: 2, icon: faBookOpen, title: 'Khóa học của tôi', link: '/my-course' }
               ]}
             />
           </div>
@@ -45,28 +45,28 @@ const MenuMobile = ({ isShow }: MenuMobile) => {
             <VerticalList
               data={[
                 { id: 1, icon: faHouse, title: 'Trang chủ', link: '/' },
-                { id: 2, icon: faRoad, title: 'Lộ trình', link: '#' },
-                { id: 3, icon: faLightbulb, title: 'Khóa học', link: '#' },
-                { id: 4, icon: faNewspaper, title: 'Blog', link: '#' }
+                { id: 2, icon: faRoad, title: 'Lộ trình', link: '/lerning-path' },
+                { id: 3, icon: faLightbulb, title: 'Khóa học', link: '/course' },
+                { id: 4, icon: faNewspaper, title: 'Blog', link: '/blog' }
               ]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__saved">
             <VerticalList
-              data={[{ id: 1, icon: faBookmark, title: 'Bài viết đã lưu', link: '#' }]}
+              data={[{ id: 1, icon: faBookmark, title: 'Bài viết đã lưu', link: '/bookmark' }]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__reference">
             <VerticalList
               data={[
-                { id: 1, icon: faCircleInfo, title: 'Giới thiệu', link: '#' },
-                { id: 2, icon: faUsers, title: 'Cơ hội việc làm', link: '#' }
+                { id: 1, icon: faCircleInfo, title: 'Giới thiệu', link: '/about' },
+                { id: 2, icon: faUsers, title: 'Cơ hội việc làm', link: '/carrer' }
               ]}
             />
           </div>
           <div className="menu-mobile__contents__wrapper__logout">
             <VerticalList
-              data={[{ id: 1, icon: faRightFromBracket, title: 'Đăng xuất', link: '#' }]}
+              data={[{ id: 1, icon: faRightFromBracket, title: 'Đăng xuất', link: '/logout' }]}
             />
           </div>
         </div>
